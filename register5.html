@@ -33,10 +33,14 @@
                         <div class="page-links">
                             <a href="login5.html">Login</a><a href="register5.html" class="active">Register</a>
                         </div>
-                        <form>
-                            <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                        <form id="myForm" >
+                            <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
+                            <input class="form-control" type="text" name="address" placeholder="Address" required>
+                            <input class="form-control" type="text" name="meansoftransportation" placeholder="Means of Transportation" required>
+                            <input class="form-control" type="text" name="vehiclename" placeholder="Vehicle Name" required>
+                            <input class="form-control" type="text" name="vehiclenumber" placeholder="Vehicle No" required>
+                            <input class="form-control" type="number" name="phonenumber" placeholder="Phone Number" required>
+                            <input class="form-control" type="email" name="email" placeholder="Email Address" >
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Register</button>
                             </div>
@@ -53,5 +57,11 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+        window.location.href = "email-confirm.html"; // Redirect to another page
+    });
+</script>
 </body>
 </html>

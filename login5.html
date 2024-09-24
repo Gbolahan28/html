@@ -31,11 +31,17 @@
                         <h3>Get more things done with Loggin platform.</h3>
                         <p>Access to the most powerfull tool in the entire design and web industry.</p>
                         <div class="page-links">
-                            <a href="login5.html" class="active">Login</a><a href="register5.html">Register</a>
+                            <a href="login5.html" class="active">Merchants</a><a href="register5.html">Delivery Partners</a>
                         </div>
-                        <form>
-                            <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                        <form id="myForm" >
+                            <input class="form-control" type="text" name="storename" placeholder="Store Name" required>
+                            <input class="form-control" type="text" name="ownername" placeholder="Owners Name" required>
+                            <input class="form-control" type="text" name="stateOfOperation" placeholder="State of Operation" required>
+                            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                            <input class="form-control" type="number" name="phone number" placeholder="Phone Number" required>
+                            <input class="form-control" type="text" name="instagram" placeholder="Instagram Handle" required>
+                            <input class="form-control" type="text" name="twitter" placeholder="Twitter Handle" >
+                            <input class="form-control" type="text" name="website" placeholder="Website" >
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Login</button> <a href="forget5.html">Forget password?</a>
                             </div>
@@ -52,5 +58,11 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+        window.location.href = "email-confirm.html"; // Redirect to another page
+    });
+</script>
 </body>
 </html>
