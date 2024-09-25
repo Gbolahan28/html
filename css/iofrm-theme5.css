@@ -55,7 +55,7 @@ body {
 }
 
 .img-holder {
-    width: 600px;
+    width: 900px;
     background-image: url("../images/Pika\ Waitlist\ Banner.png");
 }
 
@@ -86,9 +86,9 @@ body {
     text-align: left;
 }
 
-.img-holder .info-holder img {
+/* .img-holder .info-holder img {
     max-width: 378px;
-}
+} */
 
 .img-holder .bg {
     opacity: 0.23;
