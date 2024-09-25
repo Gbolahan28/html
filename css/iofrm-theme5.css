@@ -35,7 +35,7 @@ body {
 }
 
 .website-logo .logo {
-    background-image: url("../images/logo-light.svg");
+    background-image: url("../images/Pika\ Logo\ White\ Usage\ SVG.svg");
 }
 
 .website-logo .logo img {
@@ -47,7 +47,7 @@ body {
 }
 
 .website-logo-inside .logo {
-    background-image: url("../images/logo-light.svg");
+    background-image: url("../images//Pika\ Logo\ White\ Usage\ SVG.svg");
 }
 
 .website-logo-inside .logo img {
@@ -56,7 +56,7 @@ body {
 
 .img-holder {
     width: 900px;
-    background-color: #5CBAFF;
+    background-image: url("../images/Pika\ Waitlist\ Banner.png");
 }
 
 .img-holder .info-holder h3 {

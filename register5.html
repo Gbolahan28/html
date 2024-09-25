@@ -21,9 +21,6 @@
         <div class="iofrm-layout">
             <div class="img-holder">
                 <div class="bg"></div>
-                <div class="info-holder">
-                    <img src="images/graphic2.svg" alt="">
-                </div>
             </div>
             <div class="form-holder">
                 <div class="form-content">
@@ -36,11 +33,20 @@
                         <form id="myForm" >
                             <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
                             <input class="form-control" type="text" name="address" placeholder="Address" required>
-                            <input class="form-control" type="text" name="meansoftransportation" placeholder="Means of Transportation" required>
+                            <select class="form-control" name="meansoftransportation" style="margin-bottom: 12px;" required>
+                                <option value="" disabled selected>Select Means of Transportation</option>
+                                <option value="car">Car</option>
+                                <option value="bike">Bike</option>
+                                <option value="bicycle">Bicycle</option>
+                                <option value="truck">Truck</option>
+                                <option value="errand boy">Errand Boy</option>
+                            </select>
+
                             <input class="form-control" type="text" name="vehiclename" placeholder="Vehicle Name" required>
                             <input class="form-control" type="text" name="vehiclenumber" placeholder="Vehicle No" required>
                             <input class="form-control" type="number" name="phonenumber" placeholder="Phone Number" required>
                             <input class="form-control" type="email" name="email" placeholder="Email Address" >
+                            <input class="form-control" type="text" name="referralink" placeholder="Referral Link">
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Register</button>
                             </div>
